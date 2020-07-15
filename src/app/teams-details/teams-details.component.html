@@ -1,0 +1,12 @@
+<h2 class="title" *ngIf="items" >{{items[0].nome}}</h2>
+
+<p *ngIf="items.length === 0" > Não existe nenhuma matéria</p>
+
+<div *ngFor="let item of items">
+  <a href="{{item.url}}" target="_blank" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1" >{{item.descricao}}</h5>
+    </div>
+    <small class="text-muted">Portal: {{item.portal}}</small>
+  </a>
+  </div>

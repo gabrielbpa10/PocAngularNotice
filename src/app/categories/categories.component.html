@@ -1,0 +1,8 @@
+<div clas="categories">
+<ul class="list-group">
+  <li class="list-group-item active">Categorias</li>
+  <li class="list-group-item" *ngFor="let item of categories | async">
+    <a [routerLink]="['/news',item.nome]">{{item.nome}}</a>
+  </li>
+</ul>
+</div>

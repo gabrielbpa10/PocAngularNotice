@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "news-dc82e": {
+      "hosting": {
+        "jornal": [
+          "news-dc82e"
+        ]
+      }
+    }
+  }
+}

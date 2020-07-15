@@ -1,0 +1,14 @@
+<div class="container-first" *ngFor="let notice of noticePrincipal" >
+<a href="{{notice.url}}" target="_blank">
+<h3 *ngIf="notice.id == 6">{{notice.descricao}}</h3></a>
+<img *ngIf="notice.id == 6"  src="{{notice.imgDestaque}}" width="100" height="250"/>
+</div>
+
+<div class="container-second" >
+<ul class="list-group list-group-horizontal" >
+  <li class="list-group-item" *ngFor="let notice of noticesDestaques">
+    <a href="{{notice.url}}" target="_blank">{{notice.descricao}}</a></li>
+</ul>
+</div>
+
+
